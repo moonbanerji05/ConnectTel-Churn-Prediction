@@ -1,34 +1,37 @@
-# ConnectTel Cutomer Churn Prediction
+# ConnectTel Customer Churn Prediction
 
-## Overview
-ConnectTel Cutomer Churn Prediction is a machine learning project that predicts customers who are likely to churn.
+## Project Overview
+
+ConnectTel Customer Churn Prediction is a machine learning project designed to identify customers who are likely to leave a telecom company.
+
+The goal is to help ConnectTel identify high-risk customers early and take proactive retention actions.
 
 ## Objective
-The objective is to identify high-risk customers early so that ConnectTel can take proactive rentention actions.
 
-## Dataset
-Telco Cutomer Churn dataset  containing customer demographics, services, account information and chiurn status.
+To build a reliable machine learning model that predicts customer churn and provides useful business insights.
 
-## Features
+## Project Workflow
 
--Exploratory Data Analysis
--Feature Engineering
--Data Preprocessing
--Logistic Regression
--Random Forest
--XGBoost
--GridSearchCV Hyperparameter Tuning
--Cross-Validation
--Confusion Matrix
--ROC-AUC Evaluation
--SHAP Explainable AI
--Buisness Insights
+- Exploratory Data Analysis (EDA)
+- Data Cleaning
+- Feature Engineering
+- Data Preprocessing
+- Logistic Regression
+- Random Forest
+- XGBoost
+- 5-Fold Cross-Validation
+- GridSearchCV Hyperparameter Tuning
+- Model Evaluation
+- SHAP Explainable AI
+- Business Recommendations
 
-## Engineered Features
+## Feature Engineering
 
--TotalChargesPerTenure
--ServiceCount
--HasStreaming
+Three new features were created:
+
+- `TotalChargesPerTenure`
+- `ServiceCount`
+- `HasStreaming`
 
 ## Machine Learning Models
 
@@ -37,10 +40,45 @@ Telco Cutomer Churn dataset  containing customer demographics, services, account
 3. XGBoost
 4. Tuned XGBoost
 
-## Buisness Impact
+Models were evaluated using:
 
-The model can help ConnectTel identify high-risk customers and design targeted retention strategies such as personalized offers, contract upgrades and improved customer support.
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+
+## Explainable AI
+
+SHAP was used to identify the most important factors influencing customer churn predictions.
+
+## Business Impact
+
+The model can help ConnectTel:
+
+- Identify high-risk customers
+- Target month-to-month customers
+- Focus on new customers
+- Review high monthly-charge customers
+- Create personalized retention strategies
 
 ## Technologies Used
 
-Python, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, XGBoost and SHAP.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
+- SHAP
+
+## Project Structure
+
+```text
+ConnectTel-Churn-Prediction/
+├── ConnectTel_Churn_Prediction.ipynb
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+├── README.md
+├── requirements.txt
+└── .gitignore
