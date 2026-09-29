@@ -82,3 +82,6 @@ ConnectTel-Churn-Prediction/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
+##Live Application
+https://connecttel-churn-prediction-hne9hz67zr8jfkghjauxgj.streamlit.app/
